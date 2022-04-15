@@ -42,12 +42,12 @@ router.post('/', async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'bslilbeats@gmail.com',
-                pass: 'betcgppyycsgmekg'
+                user: 'your email here',
+                pass: 'password to your email'
             }
         });
         const mailOptions = {
-            from: 'bslilbeats@gmail.com',
+            from: 'your email here',
             to: email,
             subject: 'OTP for password reset',
             text: `Your OTP is ${otp}`
